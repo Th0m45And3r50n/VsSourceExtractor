@@ -34,7 +34,6 @@
             this.OutputPathTextbox = new System.Windows.Forms.TextBox();
             this.ChangeOutputButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.ClearPackagesCheckbox = new System.Windows.Forms.CheckBox();
             this.ExtractButton = new System.Windows.Forms.Button();
             this.ExitCheckbox = new System.Windows.Forms.CheckBox();
             this.Progressbar = new System.Windows.Forms.ProgressBar();
@@ -106,17 +105,6 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Output path";
             // 
-            // ClearPackagesCheckbox
-            // 
-            this.ClearPackagesCheckbox.AutoSize = true;
-            this.ClearPackagesCheckbox.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ClearPackagesCheckbox.Location = new System.Drawing.Point(15, 126);
-            this.ClearPackagesCheckbox.Name = "ClearPackagesCheckbox";
-            this.ClearPackagesCheckbox.Size = new System.Drawing.Size(123, 18);
-            this.ClearPackagesCheckbox.TabIndex = 7;
-            this.ClearPackagesCheckbox.Text = "Clear packages";
-            this.ClearPackagesCheckbox.UseVisualStyleBackColor = true;
-            // 
             // ExtractButton
             // 
             this.ExtractButton.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -132,7 +120,7 @@
             // 
             this.ExitCheckbox.AutoSize = true;
             this.ExitCheckbox.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ExitCheckbox.Location = new System.Drawing.Point(148, 126);
+            this.ExitCheckbox.Location = new System.Drawing.Point(15, 125);
             this.ExitCheckbox.Name = "ExitCheckbox";
             this.ExitCheckbox.Size = new System.Drawing.Size(49, 18);
             this.ExitCheckbox.TabIndex = 9;
@@ -141,9 +129,9 @@
             // 
             // Progressbar
             // 
-            this.Progressbar.Location = new System.Drawing.Point(211, 126);
+            this.Progressbar.Location = new System.Drawing.Point(70, 126);
             this.Progressbar.Name = "Progressbar";
-            this.Progressbar.Size = new System.Drawing.Size(153, 18);
+            this.Progressbar.Size = new System.Drawing.Size(294, 18);
             this.Progressbar.TabIndex = 10;
             // 
             // Form1
@@ -154,7 +142,6 @@
             this.Controls.Add(this.Progressbar);
             this.Controls.Add(this.ExitCheckbox);
             this.Controls.Add(this.ExtractButton);
-            this.Controls.Add(this.ClearPackagesCheckbox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.OutputPathTextbox);
             this.Controls.Add(this.ChangeOutputButton);
@@ -182,7 +169,6 @@
         private System.Windows.Forms.TextBox OutputPathTextbox;
         private System.Windows.Forms.Button ChangeOutputButton;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox ClearPackagesCheckbox;
         private System.Windows.Forms.Button ExtractButton;
         private System.Windows.Forms.CheckBox ExitCheckbox;
         private System.Windows.Forms.ProgressBar Progressbar;

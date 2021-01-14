@@ -1,0 +1,10 @@
+C:\Users\Thomas\source\repos\VsSourceExtractor\VsSourceExtractor\bin\Debug\VsSourceExtractor.exe.config
+C:\Users\Thomas\source\repos\VsSourceExtractor\VsSourceExtractor\bin\Debug\VsSourceExtractor.exe
+C:\Users\Thomas\source\repos\VsSourceExtractor\VsSourceExtractor\bin\Debug\VsSourceExtractor.pdb
+C:\Users\Thomas\source\repos\VsSourceExtractor\VsSourceExtractor\obj\Debug\VsSourceExtractor.csprojAssemblyReference.cache
+C:\Users\Thomas\source\repos\VsSourceExtractor\VsSourceExtractor\obj\Debug\VsSourceExtractor.Form1.resources
+C:\Users\Thomas\source\repos\VsSourceExtractor\VsSourceExtractor\obj\Debug\VsSourceExtractor.Properties.Resources.resources
+C:\Users\Thomas\source\repos\VsSourceExtractor\VsSourceExtractor\obj\Debug\VsSourceExtractor.csproj.GenerateResource.cache
+C:\Users\Thomas\source\repos\VsSourceExtractor\VsSourceExtractor\obj\Debug\VsSourceExtractor.csproj.CoreCompileInputs.cache
+C:\Users\Thomas\source\repos\VsSourceExtractor\VsSourceExtractor\obj\Debug\VsSourceExtractor.exe
+C:\Users\Thomas\source\repos\VsSourceExtractor\VsSourceExtractor\obj\Debug\VsSourceExtractor.pdb

@@ -45,12 +45,12 @@ namespace VsSourceExtractor
             ExtractButton.Enabled = false;
             ExtractButton.Text = "Extracting...";
 
-            await Task.Run(()=> {
+            await Task.Run(() => {
                 int FileCount = 0;
                 foreach (string newPath in Directory.GetFiles(SoursePath, "*.*", SearchOption.AllDirectories))
                 {
                     if (newPath.Contains(".vs") || newPath.Contains("bin") || newPath.Contains("Debug") || newPath.Contains("Release") || newPath.Contains("obj")) continue;
-                    if (ClearPackagesCheckbox.Checked) if (newPath.Contains("packages")) continue;
+                    if (newPath.Contains("packages") && !Path.GetExtension(newPath).Contains(".config")) continue; //fixed
                     FileCount++;
                 }
                 Invoke((Action)(() => { Progressbar.Maximum = FileCount; }));
@@ -62,7 +62,7 @@ namespace VsSourceExtractor
                         try
                         {
                             if (dirPath.Contains(".vs") || dirPath.Contains("bin") || dirPath.Contains("Debug") || dirPath.Contains("Release") || dirPath.Contains("obj")) continue;
-                            if (ClearPackagesCheckbox.Checked) if (dirPath.Contains("packages")) continue;
+                            if (dirPath.Contains("packages")) continue;
                             Directory.CreateDirectory(dirPath.Replace(SoursePath, WorkDir));
                         }
                         catch { }
@@ -70,7 +70,7 @@ namespace VsSourceExtractor
                     foreach (string newPath in Directory.GetFiles(SoursePath, "*.*", SearchOption.AllDirectories))
                     {
                         if (newPath.Contains(".vs") || newPath.Contains("bin") || newPath.Contains("Debug") || newPath.Contains("Release") || newPath.Contains("obj")) continue;
-                        if (ClearPackagesCheckbox.Checked) if (newPath.Contains("packages")) continue;
+                        if (newPath.Contains("packages") && !Path.GetExtension(newPath).Contains(".config")) continue; //fixed
                         File.Copy(newPath, newPath.Replace(SoursePath, WorkDir), true);
                         Invoke((Action)(() => { Progressbar.Value++; }));
                     }
